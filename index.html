@@ -25,12 +25,10 @@
      }
 
      function convert(number) {
-          let foot_to_meter = footToMeter(number)
-          let meter_to_foot = meterToFoot(number)
 
-          document.getElementById("result_1").innerHTML = number + " foot " + "= " + foot_to_meter + " meter";
+          document.getElementById("result_1").innerHTML = number + " foot " + "= " + footToMeter(number) + " meter";
 
-          document.getElementById("result_2").innerHTML = number + " meter " + "= " + meter_to_foot + " foot";
+          document.getElementById("result_2").innerHTML = number + " meter " + "= " + meterToFoot(number) + " foot";
      }
 
      
