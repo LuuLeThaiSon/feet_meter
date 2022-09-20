@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <input type="text" id="number" oninput="convert(this.value)">
+     <p id="result_1">0 foot = 0 meter</p>
+     <p id="result_2">0 meter = 0 foot</p>
+</body>
+</html>
+
+<script>
+     function footToMeter(number) {
+          let result;
+          return result = 0.305 * number;
+     }
+
+     function meterToFoot(number) {
+          let result;
+          return result = 3.279 * number;
+     }
+
+     function convert(number) {
+          let foot_to_meter = footToMeter(number)
+          let meter_to_foot = meterToFoot(number)
+
+          document.getElementById("result_1").innerHTML = number + " foot " + "= " + foot_to_meter + " meter";
+
+          document.getElementById("result_2").innerHTML = number + " meter " + "= " + meter_to_foot + " foot";
+     }
+
+     
+     
+</script>
